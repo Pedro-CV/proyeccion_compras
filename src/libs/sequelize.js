@@ -10,7 +10,11 @@ const sequelize = new Sequelize(
     config.dbPassword,
     {
         host:config.dbHost,
-        dialect: 'mysql'
+        dialect: 'mysql',
+        dialectOptions: {
+            require: true,
+            rejectUnauthorized: false
+        }
     }
 );
 
