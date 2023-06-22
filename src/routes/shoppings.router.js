@@ -8,6 +8,7 @@ router
 .post('/', shoppingsController.create)
 .put('/:id', shoppingsController.update)
 .delete('/:id', shoppingsController._delete)
-.get("/:startDate/:endDate/:product_barcode", shoppingsController._shoppings);
+.get("/:startDate/:endDate/:product_barcode", shoppingsController._shoppings)
+.get("/getFirst/:product_barcode", shoppingsController._nextData);
 
 module.exports = router;

@@ -13,7 +13,6 @@ const sequelize = new Sequelize(
     dialect: "mysql",
   }
 );
-console.log(config);
 
 sequelize.sync();
 setupModels(sequelize);
