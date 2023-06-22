@@ -12,7 +12,6 @@ const sequelize = new Sequelize(
         host:config.dbHost,
         dialect: 'mysql',
         dialectOptions: {
-            require: true,
             rejectUnauthorized: false
         }
     }
