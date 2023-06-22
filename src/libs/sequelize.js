@@ -10,15 +10,10 @@ const sequelize = new Sequelize(
   {
     host: config.dbHost,
     dialect: "mysql",
-    dialectOptions: {
-      ssl: {
-        rejectUnauthorized: true,
-      },
-    }
   }
 );
 console.log(config);
-sequelize.authenticate();
+
 sequelize.sync();
 setupModels(sequelize);
 
