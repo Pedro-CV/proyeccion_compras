@@ -18,6 +18,7 @@ const sequelize = new Sequelize(
   }
 );
 console.log(config);
+sequelize.authenticate();
 sequelize.sync();
 setupModels(sequelize);
 
