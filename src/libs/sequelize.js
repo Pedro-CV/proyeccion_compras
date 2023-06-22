@@ -5,13 +5,12 @@ const { config } = require('../config/config');
 const setupModels = require('./../db/models/index');
 
 const sequelize = new Sequelize(
+    config.dbName,
+    config.dbUser,
+    config.dbPassword,
     {
-        username: config.dbName,
-        password: config.dbPassword,
-        database: config.dbName,
-        dialect: "mysql",
-        port: config.dbPort,
-        host: config.dbHost,
+        host:config.dbHost,
+        dialect: 'mysql',
     }
 );
 
