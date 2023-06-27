@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "install": "npm ci",
     "start": "node src/app.js"
   },
   "keywords": [],
