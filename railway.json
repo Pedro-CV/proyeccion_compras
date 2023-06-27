@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "environments": {
+      "default": {
+        "buildCommand": "npm run build",
+        "runCommand": "npm start"
+      }
+    }
+  }
